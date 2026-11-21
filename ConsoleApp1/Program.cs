@@ -19,9 +19,9 @@ namespace ArmstrongApp
 
                 switch (choice)
                 {
-                    case "1":
-                        CheckArmstrong();
-                        break;
+                    //case "1":
+                    //    CheckArmstrong();
+                    //    break;
                     case "2":
                         ListArmstrong();
                         break;
@@ -35,19 +35,19 @@ namespace ArmstrongApp
             }
         }
 
-        static void CheckArmstrong()
-        {
-            Console.Write("Enter a non-negative whole number: ");
-            if (!long.TryParse(Console.ReadLine(), out long n) || n < 0)
-            {
-                Console.WriteLine("That's not a valid non-negative whole number.");
-                return;
-            }
+        //static void CheckArmstrong()
+        //{
+        //    Console.Write("Enter a non-negative whole number: ");
+        //    if (!long.TryParse(Console.ReadLine(), out long n) || n < 0)
+        //    {
+        //        Console.WriteLine("That's not a valid non-negative whole number.");
+        //        return;
+        //    }
 
-            Console.WriteLine(IsArmstrong(n)
-                ? $"{n} is an Armstrong number."
-                : $"{n} is not an Armstrong number.");
-        }
+        //    Console.WriteLine(IsArmstrong(n)
+        //        ? $"{n} is an Armstrong number."
+        //        : $"{n} is not an Armstrong number.");
+        //}
 
         static void ListArmstrong()
         {
